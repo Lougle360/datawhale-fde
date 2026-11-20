@@ -1,6 +1,6 @@
-# 曲率FDE
+# Datawhale FDE
 
-把《FDE 落地六步法》做成可调用的 FDE 项目 Skill。它包含 1 个项目路由、6 个阶段 Skill 和 12 个循环工具 Skill。路由读取项目的 `STATE.md`，找到当前未通过的关门条件，再调用对应阶段并把结果记录在同一项目目录。
+基于 Datawhale《FDE落地100案例》首批 24 案整理的《FDE 落地六步法》，做成可调用的 FDE 项目 Skill。它包含 1 个项目路由、6 个阶段 Skill 和 12 个循环工具 Skill。路由读取项目的 `STATE.md`，找到当前未通过的关门条件，再调用对应阶段并把结果记录在同一项目目录。
 
 ## 六个阶段
 
@@ -18,8 +18,8 @@
 ## 安装
 
 ```sh
-git clone https://github.com/Lougle360/curvature-fde.git
-cd curvature-fde
+git clone https://github.com/Lougle360/datawhale-fde.git
+cd datawhale-fde
 mkdir -p ~/.agents/skills
 for skill in skills/*; do ln -s "$(pwd)/$skill" ~/.agents/skills/"$(basename "$skill")"; done
 ```
@@ -32,4 +32,4 @@ for skill in skills/*; do ln -s "$(pwd)/$skill" ~/.agents/skills/"$(basename "$s
 
 ## 资料和使用状态
 
-`methods/` 保存九份《FDE 落地六步法》方法文档，供各阶段回查；`skills/*/references/` 保存对应的案例、检查表和专属方法。示例项目采用虚构客户输入，真实客户的收益与门状态需以项目证据判断。本仓库从本地曲率 FDE Agent 整理，并核对了引用与安装路径。
+`methods/` 保存九份《FDE 落地六步法》方法文档，供各阶段回查；`skills/*/references/` 保存对应的案例、检查表和专属方法。示例项目采用虚构客户输入，真实客户的收益与门状态需以项目证据判断。本 Skill 套件依据 Datawhale 案例资料整理，并核对了引用与安装路径。

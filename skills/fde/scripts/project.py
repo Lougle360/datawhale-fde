@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Locate or initialize a Curvature FDE project beside the skill package."""
+"""Locate or initialize a Datawhale FDE project beside the skill package."""
 
 import argparse
 import shutil
